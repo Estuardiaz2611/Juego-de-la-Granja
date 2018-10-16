@@ -3,12 +3,12 @@ var lapiz = canvas.getcontext('2d');
 
 var fondo = {
     url: './imagenes/tile.png',
-    Imagen: image
+    imagen: Image
 };
-fondo.image = new image();
+fondo.imagen = new image();
 fondo,imagen.src = fondo.url;
 
-fondo,image.addEventistener("load",function(){
+fondo,imagen.addEventistener("load",function(){
     dibujar();
 
 });
