@@ -80,7 +80,6 @@ var tecla = {
     DOWN:40,
     ENTER: 13
 }
-
 function movimineto(evento){
     console.log(evento);
     switch(evento.keyCode){
@@ -117,12 +116,10 @@ function movimineto(evento){
         break;
     }
 }
-
 function random(minimo,maximo){
     return Math.floor(Math.random() * (maximo - minimo +1)) + minimo;
 }
 function iniciarMatriz() {
-
     for (var i = 0; i < matriz.length; i++) {
         matriz[i] = new Array(6);
         for (var j = 0; j < matriz.length; j++) {
@@ -130,7 +127,6 @@ function iniciarMatriz() {
         }
     }
 }
-
 function inicializarVacas() {
     var numero = random(0, 5);
     for (var i = 0; i <= numero; i++) {
@@ -141,7 +137,6 @@ function inicializarVacas() {
         }
     }
 }
-
 function inicializarCerdos() {
     var numero = random(0, 5);
     for (var i = 0; i <= numero; i++) {
@@ -152,7 +147,6 @@ function inicializarCerdos() {
         }
     }
 }
-
 function dibujarMatriz() {
     for (var i = 0; i < matriz.length; i++) {
         for (var j = 0; j < matriz.length; j++) {
@@ -162,5 +156,17 @@ function dibujarMatriz() {
                 lapiz.drawImage(cerdo.imagen, i * DIMENSION, j * DIMENSION);
             }
         }
+    }
+}
+function Comprobacion(){
+    for (var i = 0; i < matriz.length; i++){
+        if(matriz[i] == 's'){ 
+                     
+        }
+    }
+}
+function VacaBuena(){
+    if(cuchillo == vaca){
+
     }
 }
