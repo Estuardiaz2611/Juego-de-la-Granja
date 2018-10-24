@@ -221,6 +221,7 @@ function Comprobacion(x, y) {
     switch (matriz[posicionX][posicionY]) {
         case "x":
             console.log("No hay nada");
+            alert("No hay nada")
             break;
         case "v":
             alert("Encontre Una Vaca");
